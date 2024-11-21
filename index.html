@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>留学生寝室</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url('Wallpaper.jpg') no-repeat center center/cover;
+      color: white;
+    }
+
+    h1 {
+      top: 5%;
+      position: absolute;
+      text-align: center;
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .curvy-box {
+      position: relative;
+      width: 80%;
+      max-width: 800px;
+      height: 450px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      background-color: rgba(255, 255, 255, 0.9);
+      transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .curvy-box:hover {
+      transform: scale(1.05); /* Zoom in the container slightly */
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f4;
+      cursor: pointer;
+    }
+
+    .swiper-slide iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      pointer-events: none; 
+    }
+
+    .slide-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+
+    .slide-overlay h2 {
+      color: white;
+      font-size: 2rem;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>留学生寝室</h1>
+  <div class="curvy-box">
+    <!-- Swiper Container -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" onclick="window.location.href='https://chockcolate.github.io/myPortfolio/index.html'">
+          <iframe src="https://chockcolate.github.io/myPortfolio/index.html"></iframe>
+          <div class="slide-overlay">
+            <h2>黄崇杰</h2>
+          </div>
+        </div>
+        <div class="swiper-slide" onclick="window.location.href='https://chockcolate.github.io/myPortfolio/index.html'">
+          <iframe src="https://chockcolate.github.io/myPortfolio/achievements.html"></iframe>
+          <div class="slide-overlay">
+            <h2>黄崇杰</h2>
+          </div>
+        </div>
+        <div class="swiper-slide" onclick="window.location.href='https://chockcolate.github.io/myPortfolio/index.html'">
+          <iframe src="https://chockcolate.github.io/myPortfolio/gallery.html"></iframe>
+          <div class="slide-overlay">
+            <h2>黄崇杰</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      effect: 'slide',
+    });
+  </script>
+</body>
+</html>
