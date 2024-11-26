@@ -80,12 +80,33 @@
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
       margin: 0;
     }
+
+    /* Button styling */
+    .back-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: rgba(0, 123, 255, 0.9);
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      transform: scale(1.05);
+      background-color: rgba(0, 123, 255, 1);
+    }
   </style>
 </head>
 <body>
   <h1>留学生寝室</h1>
   <div class="curvy-box">
-    <!-- Swiper Container -->
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide" onclick="window.location.href='https://chockcolate.github.io/myPortfolio/index.html'">
@@ -109,6 +130,8 @@
       </div>
     </div>
   </div>
+
+  <button class="back-button" onclick="window.location.href='https://daviana-yiya.github.io/2406Web/'">Back to Class</button>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script>
